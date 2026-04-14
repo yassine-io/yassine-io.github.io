@@ -52,7 +52,7 @@ const HeroSection = () => {
           <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-10 max-w-lg">
             A passionate software engineering student and full stack developer with a focus on building
             intelligent, scalable web applications. Experienced in Java, Spring Boot, React, and AI-driven
-            solutions — always looking for the next challenge to solve.
+            solutions, always looking for the next challenge to solve.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
