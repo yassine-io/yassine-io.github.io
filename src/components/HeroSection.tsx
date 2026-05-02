@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { User, Download, Mail } from "lucide-react";
+import { Download, Mail } from "lucide-react";
 
 const roles = [
   "Full Stack Developer",
   "AI Engineer",
   "Software Engineering Student",
 ];
+
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -35,8 +36,9 @@ const HeroSection = () => {
   }, [text, deleting, roleIndex]);
 
   return (
-    <section className="relative min-h-screen flex items-center dot-grid hero-glow">
+    <section className="relative min-h-screen flex flex-col items-center justify-center dot-grid hero-glow">
       <div className="max-w-5xl mx-auto px-6 py-24 w-full flex flex-col md:flex-row items-center gap-12">
+        
         {/* Text content */}
         <div className="flex-1">
           <p className="section-label mb-4">_hello</p>
@@ -52,7 +54,7 @@ const HeroSection = () => {
           <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-10 max-w-lg">
             A passionate software engineering student and full stack developer with a focus on building
             intelligent, scalable web applications. Experienced in Java, Spring Boot, React, and AI-driven
-            solutions, always looking for the next challenge to solve.
+            solutions — always looking for the next challenge to solve.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
@@ -79,13 +81,17 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Picture frame */}
-        <div className="picture-frame w-56 h-56 md:w-72 md:h-72 shrink-0">
-          <div className="picture-frame-inner flex items-center justify-center">
-            <User className="w-24 h-24 md:w-32 md:h-32 text-muted-foreground/40" />
-          </div>
+        {/* Photo — style comme l'exemple */}
+        <div className="shrink-0 w-64 h-72 md:w-80 md:h-96 rounded-2xl overflow-hidden border border-primary/20 shadow-[0_0_40px_hsla(263,70%,58%,0.15)]">
+          <img
+            src="/photo.jpeg"
+            alt="Yassine Moussa"
+            className="w-full h-full object-cover object-top"
+          />
         </div>
       </div>
+
+ 
     </section>
   );
 };
