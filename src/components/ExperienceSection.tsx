@@ -16,7 +16,7 @@ const experiences = [
     stack: ["React.js", "Spring Boot", "REST API", "PostgreSQL", "Git"],
   },
   {
-    title: "End-of-Year Internship — LLM-Based Report Generation",
+    title: "End-of-Years Internship — LLM-Based Report Generation",
     company: "FST Settat",
     location: "Settat, Morocco",
     period: "Dec 2025 – Jan 2026",
